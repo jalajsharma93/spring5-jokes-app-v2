@@ -13,7 +13,7 @@ public class JokeController {
     public JokeController(JokeService jokeService) {
         this.jokeService = jokeService;
     }
-
+    //empty maping for root
     @RequestMapping({"/",""})
     public String showJoke(Model model){
         model.addAttribute("Joke", jokeService.getJock());
